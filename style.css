@@ -15,7 +15,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 50px;
+    flex-wrap: wrap; 
 }
 
 .box {
@@ -33,3 +34,19 @@ h1 {
     transform: scale(1.1);
 }
 
+@media only screen and (max-width: 768px) {
+    .colorboxes {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .colorboxes {
+        margin-top: 10px;
+    }
+    .box {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+}
